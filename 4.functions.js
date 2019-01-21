@@ -22,3 +22,11 @@ var add = (function(a,b){
 }(1,2));
 
 console.log(add);
+
+//4. constructor functions
+function Person(firstName,lastName){
+ // this.fName = firstName;
+ // this.lName = lastName;
+}
+var person1 = new Person("swathi","patthi")
+console.log(person1);
