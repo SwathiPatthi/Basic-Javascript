@@ -64,3 +64,42 @@ var output2 = array3.map(function(value){
 })
 console.log(output2)
 
+//slice method retuns the selected items from the array. It can take 2 parameters. It does not alter the original object. Every time it gives new array object
+var array4 = [1,2,3,4]
+console.log(array4.slice(2)) //selects array elements from 3,4
+
+var array5 = [1,2,3,4]
+console.log(array5.slice(-1)) //selects array elements from last i.e., 4
+
+console.log(array5) //result is 1,2,3,4 as there is no alteration is done for the original array
+
+var array6= [1,2,3,4,5,6,7]
+console.log(array6.slice(2,10))  //results 3,4,5,6,7
+
+var array7=[1,2,3,4,5]
+console.log(array7.slice(2,1)) //results [] empty literal
+
+//if any argument is NaN, it is treated as 0
+var array8=[1,2,3,4,5]
+console.log(array8.slice(NaN,3)) //results 1,2,3
+
+var array8=[1,2,3,4,5]
+console.log(array8.slice(NaN,NaN)) //results [] empty literal
+
+//splice method retuns the  removed items in an array. It can take 2 arguments. It alters the original array
+var array9=[1,2,3,4,5,6,7]
+console.log(array9.splice(2)) //results [3,4,5,6,7]
+console.log(array9) // results 1,2 as the other elements are removed
+
+console.log(array9.splice(3)) //results [] as array is already altered
+
+//console.log(array9) // removes array items permananently and results 3,4,5
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+console.clear()
+console.log("hello world")
+console.log("%cthis is my warn text","color:red;background-color:yellow")
+console.info("something strange","uma")
+console.warn("I am warning you Uma!")
+console.error("High critical warning Uma!")
+console.table([{name:'Swathi',city:'Bangalore'},{name:'mau',city:'Bangalore'}])
